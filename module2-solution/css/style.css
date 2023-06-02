@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+    margin: 70px 0;
+    font-size: calc(100% + 75%);
+}
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.title-chicken {
+    background-color: Coral;
+    
+}
+
+.title-beef {
+    background-color: blue;
+    color: white;
+}
+
+.title-sushi {
+    background-color: yellowgreen;
+}
+
+span.title:nth-child(3) {
+    background-color: rebeccapurple;
+}
+
+span.title {
+    position: absolute;
+    border: 1px black solid;
+    top: 0px;
+    right: 0px;
+    padding: 0 30px;
+    font-size: calc(100% + 25%);
+    font-weight: bold;
+    
+}
+div.content {
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    top : 20px;
+    margin-bottom: 30px;
+   
+
+}
+section{
+    position: relative;
+    background-color: gray;
+    width: calc(33% - 40px);
+    border: 1px black solid;
+    margin: 0 20px;
+    float: left;
+}
+
+
+
+
+@media (min-width : 992px) {
+    section {
+        width: calc(33% - 40px);
+    }
+    
+    
+}
+
+@media (min-width : 768px) and (max-width :  991px) {
+    section {
+        width: calc(50% - 40px);
+        margin-bottom:20px;
+    }
+    section:nth-child(4){
+        width: calc(100% - 40px);
+     }
+}
+
+@media  (max-width : 767px) {
+    section {
+        width: calc(100% - 40px);
+        margin-bottom:20px;
+    }
+}
